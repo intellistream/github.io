@@ -1,12 +1,11 @@
 ---
-title: "Contact Us"
-description: "meta description"
+title: "联系我们"
+description: "联系张书豪实验室"
 draft: false
 info:
-  title: Why you should contact us!
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit recusandae voluptates doloremque veniam temporibus porro culpa ipsa, nisi soluta minima saepe laboriosam debitis nesciunt.
+  title: "为什么联系我们！"
+  description: "如有研究合作、项目咨询或学术交流需求，请通过以下方式与我们取得联系。"
   contacts:
-    - "phone: +88 125 256 452"
-    - "Mail: [info@bigspring.com](mailto:info@bigspring.com)"
-    - "Address: 360 Main rd, Rio, Brazil"
+    - "邮箱：shuhao_zhang@hust.edu.cn"
+    - "地址：湖北省武汉市洪山区珞喻路1037号 华中科技大学计算机学院 408 室"
 ---
