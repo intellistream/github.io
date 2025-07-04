@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9dad745-f97c-4537-830c-bfb01122acff" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/src/layouts/shortcodes/Youtube.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/shortcodes/Youtube.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/astro.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/social.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/social.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/pages/elements.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/components/Social.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/components/Social.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1751610229367</updated>
       <workItem from="1751610230820" duration="2975000" />
-      <workItem from="1751613238550" duration="5883000" />
+      <workItem from="1751613238550" duration="6209000" />
     </task>
     <servers />
   </component>
