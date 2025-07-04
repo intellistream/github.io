@@ -1,0 +1,37 @@
+{
+  "site": {
+    "title": "IntelliStream",
+    "base_url": "https://intellistream.github.io/",
+    "base_path": "/",
+    "trailing_slash": false,
+    "favicon": "/images/favicon.png",
+    "logo": "/images/logo.png",
+    "logo_width": "200",
+    "logo_height": "58",
+    "logo_text": "IntelliStream"
+  },
+
+  "settings": {
+    "pagination": 4,
+    "summary_length": 200
+  },
+
+  "nav_button": {
+    "enable": true,
+    "label": "Get Started",
+    "link": "/contact"
+  },
+
+  "params": {
+    "contact_form_action": "",
+    "tag_manager_id": "",
+    "footer_content": "IntelliStream Lab @ HUST",
+    "copyright": "Designed and Developed By [Shuhao Zhang](https://shuhaozhangtony.github.io/), thanks to [Themefisher](https://themefisher.com/)."
+  },
+
+  "metadata": {
+    "meta_author": "IntelliStream",
+    "meta_image": "/images/flower.jpg",
+    "meta_description": "IntelliStream@HUST"
+  }
+}
