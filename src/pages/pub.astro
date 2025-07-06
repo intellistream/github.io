@@ -1,0 +1,67 @@
+---
+import Base from "@/layouts/Base.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
+const entry = await getEntry(
+  "publications",
+  "-index"
+) as CollectionEntry<"publications">;
+
+const { title, description, publications } = entry.data;
+
+// 只保留带 year 字段的条目，按 year 降序，取前 10 条
+const recent = publications
+  .filter(p => typeof p.year === "number")
+  .sort((a, b) => b.year - a.year)
+  .slice(0, 10);
+
+// 学术主页链接
+const scholarUrl = "https://shuhaozhangtony.github.io/";
+---
+<Base title={title} description={description}>
+  <section class="section">
+    <div class="container">
+      <h1 class="text-center font-normal" set:html={markdownify(title)} />
+
+      <ul class="mt-8 space-y-6">
+        {recent.map(item => (
+          <li class="border-b pb-4">
+            {/* Title */}
+            <h3 class="text-lg font-semibold">
+              <a
+                href={item.link || "#"}
+                target="_blank"
+                rel="noopener"
+                class="hover:underline"
+              >
+                {item.name}
+              </a>
+            </h3>
+            {/* Authors */}
+            <p class="text-sm text-gray-600 mt-1">
+              {item.authors}
+            </p>
+            {/* Year */}
+            <p class="text-sm text-gray-600">
+              {item.year}
+            </p>
+          </li>
+        ))}
+      </ul>
+
+      <div class="text-center mt-8">
+        <a
+          href={scholarUrl}
+          target="_blank"
+          rel="noopener"
+          class="btn btn-secondary"
+        >
+          更多
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>
+

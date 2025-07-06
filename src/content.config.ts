@@ -85,46 +85,6 @@ const contactCollection = defineCollection({
   }),
 });
 
-//pricing collection schema
-const pricingCollection = defineCollection({
-  loader: glob({ pattern: "**/-*.{md,mdx}", base: "src/content/pricing" }),
-  schema: z.object({
-    title: z.string(),
-    description: z.string().optional(),
-    draft: z.boolean(),
-    plans: z
-      .array(
-        z.object({
-          title: z.string(),
-          subtitle: z.string().optional(),
-          price: z.number(),
-          type: z.string(),
-          recommended: z.boolean().optional(),
-          features: z.array(z.string()),
-          button: z.object({
-            label: z.string(),
-            link: z.string().default("/contact"),
-          }),
-        }),
-      )
-      .optional(),
-
-    call_to_action: z
-      .object({
-        title: z.string(),
-        content: z.string(),
-        image: z.string(),
-        button: z
-          .object({
-            enable: z.boolean().default(true),
-            label: z.string(),
-            link: z.string().default("/contact"),
-          })
-          .optional(),
-      })
-      .optional(),
-  }),
-});
 
 // FAQ collection schema
 const faqCollection = defineCollection({
@@ -170,12 +130,34 @@ const pagesCollection = defineCollection({
   }),
 });
 
+// Publications collection schema
+const publicationsCollection = defineCollection({
+  loader: glob({
+    pattern: "**/-*.{md,mdx}",
+    base: "src/content/publications",
+  }),
+  schema: z.object({
+    title:       z.string(),
+    description: z.string().optional(),
+    draft:       z.boolean(),
+    publications: z.array(
+      z.object({
+        name:    z.string(),
+        authors: z.string(),
+        venue:   z.string(),
+        year:    z.number(),
+        link:    z.string().url().optional(),
+      })
+    ),
+  }),
+});
+
 // Export collections
 export const collections = {
   homepage: homepageCollection,
   blog: blogCollection,
   pages: pagesCollection,
   contact: contactCollection,
-  pricing: pricingCollection,
   faq: faqCollection,
+  publications: publicationsCollection,
 };

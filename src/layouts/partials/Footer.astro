@@ -52,3 +52,25 @@ const { footer_content, copyright } = config.params;
     </div>
   </div>
 </footer>
+
+<!-- Plausible 脚本 -->
+<script
+  defer
+  data-domain="intellistream.github.io"
+  src="https://plausible.io/js/plausible.js"
+/>
+
+<!-- Fetch Stats API -->
+<script is:inline>
+  async function fetchStats() {
+    const site = 'intellistream.github.io';
+    const period = '30d';
+    const res = await fetch(
+      `https://plausible.io/api/v1/stats/aggregate?site_id=${site}&period=${period}&metrics=pageviews,event:快速了解`
+    );
+    const json = await res.json();
+    document.getElementById('pv-count').innerText = json.pageviews;
+    document.getElementById('click-count').innerText = json['event:快速了解'] || 0;
+  }
+  fetchStats().catch(console.error);
+</script>
