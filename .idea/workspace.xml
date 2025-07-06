@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9dad745-f97c-4537-830c-bfb01122acff" name="更改" comment="major update">
-      <change afterPath="$PROJECT_DIR$/src/components/VisitCount.astro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lib/utils/slack.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/api/contact.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/github.io.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content/homepage/-index.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/homepage/-index.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/partials/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/partials/Footer.astro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contact.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.astro" afterDir="false" />
-    </list>
+    <list default="true" id="d9dad745-f97c-4537-830c-bfb01122acff" name="更改" comment="major update" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +18,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -68,7 +62,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SHELLCHECK.PATH": "C:\\Users\\Administrator\\AppData\\Roaming\\JetBrains\\WebStorm2025.1\\plugins\\Shell Script\\shellcheck.exe",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "add-contact",
     "javascript.nodejs.core.library.configured.version": "22.17.0",
     "javascript.nodejs.core.library.typings.version": "22.16.0",
     "junie.onboarding.icon.badge.shown": "true",
@@ -138,7 +132,7 @@
       <workItem from="1751613238550" duration="6209000" />
       <workItem from="1751810314359" duration="885000" />
       <workItem from="1751811208582" duration="759000" />
-      <workItem from="1751814284022" duration="7144000" />
+      <workItem from="1751814284022" duration="7450000" />
     </task>
     <task id="LOCAL-00001" summary="major update">
       <option name="closed" value="true" />
@@ -148,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751818332483</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="major update">
+      <option name="closed" value="true" />
+      <created>1751822010987</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1751822010987</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
