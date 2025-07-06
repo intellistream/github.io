@@ -24,14 +24,14 @@ feature:
       icon: "/images/user-clock.svg"
       content: "显式 if/while/switch，分支可观测、可调试"
     - name: "执行效率优化"
-      icon: "/images/love.svg"
+      icon: "/images/speedometer.svg"
       content: "Streaming、Caching、GPU VectorOps，避免重复推理"
     - name: "可观测与复用"
-      icon: "/images/speedometer.svg"
+      icon: "/images/code.svg"
       content: "DAG 追踪、重放与差分执行，黑盒推理变可控"
     - name: "云计算服务"
-      icon: "/images/speedometer.svg"
-      content: "提供后台服务化"
+      icon: "/images/cloud.svg"
+      content: "我们提供云服务化，进一步优化部署流程"
 
 
 # call_to_action

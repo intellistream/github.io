@@ -5,6 +5,7 @@ import menu from "@/config/menu.json";
 import social from "@/config/social.json";
 import { markdownify } from "@/lib/utils/textConverter";
 import { Image } from "astro:assets";
+import VisitCount from '@/components/VisitCount.astro'
 
 const { footer_content, copyright } = config.params;
 ---
@@ -46,31 +47,15 @@ const { footer_content, copyright } = config.params;
         <Social source={social} className="social-icons mb-8" />
       </div>
     </div>
+    <!-- 我们的访客量组件 -->
+    <div class="row mt-8">
+      <div class="col-12">
+        <VisitCount />
+      </div>
+    </div>
     {/* copyright */}
     <div class="border-t border-border py-6">
       <p class="text-sm text-center" set:html={markdownify(copyright)} />
     </div>
   </div>
 </footer>
-
-<!-- Plausible 脚本 -->
-<script
-  defer
-  data-domain="intellistream.github.io"
-  src="https://plausible.io/js/plausible.js"
-/>
-
-<!-- Fetch Stats API -->
-<script is:inline>
-  async function fetchStats() {
-    const site = 'intellistream.github.io';
-    const period = '30d';
-    const res = await fetch(
-      `https://plausible.io/api/v1/stats/aggregate?site_id=${site}&period=${period}&metrics=pageviews,event:快速了解`
-    );
-    const json = await res.json();
-    document.getElementById('pv-count').innerText = json.pageviews;
-    document.getElementById('click-count').innerText = json['event:快速了解'] || 0;
-  }
-  fetchStats().catch(console.error);
-</script>

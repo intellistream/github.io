@@ -1,0 +1,18 @@
+---
+const namespace = 'https://intellistream.github.io/'
+const key = 'pageviews'
+const url = `https://api.countapi.xyz/hit/${namespace}/${key}`
+---
+<div class="text-center py-4">
+  <span>访客量：</span><strong id="pv-count">加载中…</strong>
+</div>
+
+<script is:inline client:load>
+  try {
+    const res = await fetch(url)
+    const { value } = await res.json()
+    document.getElementById('pv-count').textContent = value
+  } catch {
+    document.getElementById('pv-count').textContent = 'N/A'
+  }
+</script>
