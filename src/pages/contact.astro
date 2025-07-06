@@ -75,4 +75,23 @@ const { title, description, info } = entry.data;
       </div>
     </div>
   </section>
+  <script is:inline client:load>
+    const form = document.querySelector('.contact-form');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form));
+      try {
+        const res = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        if (res.ok) alert('发送成功');
+        else alert('发送失败');
+      } catch {
+        alert('网络错误');
+      }
+      form.reset();
+    });
+  </script>
 </Base>

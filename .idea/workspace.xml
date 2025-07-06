@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9dad745-f97c-4537-830c-bfb01122acff" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/dev.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/content/publications/-index.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/pub.astro" afterDir="false" />
+    <list default="true" id="d9dad745-f97c-4537-830c-bfb01122acff" name="更改" comment="major update">
+      <change afterPath="$PROJECT_DIR$/src/components/VisitCount.astro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/utils/slack.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/api/contact.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/github.io.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/github.io.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/config/menu.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/menu.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/content.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/content.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Base.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Base.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/content/homepage/-index.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/content/homepage/-index.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/partials/Footer.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/partials/Footer.astro" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contact.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contact.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,11 +138,24 @@
       <workItem from="1751613238550" duration="6209000" />
       <workItem from="1751810314359" duration="885000" />
       <workItem from="1751811208582" duration="759000" />
-      <workItem from="1751814284022" duration="3905000" />
+      <workItem from="1751814284022" duration="7144000" />
     </task>
+    <task id="LOCAL-00001" summary="major update">
+      <option name="closed" value="true" />
+      <created>1751818332483</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1751818332483</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="major update" />
+    <option name="LAST_COMMIT_MESSAGE" value="major update" />
   </component>
 </project>

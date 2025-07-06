@@ -23,7 +23,7 @@
   },
 
   "params": {
-    "contact_form_action": "",
+    "contact_form_action": "/api/contact",
     "tag_manager_id": "",
     "footer_content": "IntelliStream Lab @ HUST",
     "copyright": "Designed and Developed By [Shuhao Zhang](https://shuhaozhangtony.github.io/), thanks to [Themefisher](https://themefisher.com/)."
